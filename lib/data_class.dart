@@ -1,3 +1,6 @@
 import 'package:flutter/cupertino.dart';
 
-class DataClass extends ChangeNotifier {}
+class DataClass extends ChangeNotifier {
+  int _x = 0;
+  int get x => _x;
+}
