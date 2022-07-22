@@ -78,16 +78,17 @@ class HomePage extends StatelessWidget {
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
                     children: const [
-                      // GestureDetector(
-                      //     onTap: () {
-                      //       Get.to(() => SecondPage(),
-                      //           transition: Transition.upToDown,
-                      //           duration: Duration(seconds: 1));
-                      //     },
-                      //     child: Text(
-                      //       "Next Page",
-                      //       style: TextStyle(fontSize: 20, color: Colors.white),
-                      //     ),),
+                      GestureDetector(
+                        onTap: () {
+                          Get.to(() => SecondPage(),
+                              transition: Transition.upToDown,
+                              duration: Duration(seconds: 1));
+                        },
+                        child: Text(
+                          "Next Page",
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                      ),
                       Spacer(),
                       Icon(Icons.skip_next, color: Colors.white)
                     ],
