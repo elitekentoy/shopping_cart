@@ -27,7 +27,7 @@ class SecondPage extends StatelessWidget {
                       Consumer<DataClass>(builder: (context, data, child) {
                         return Text(
                           '${data.x}',
-                          style: TextStyle(
+                          style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
                           ),
@@ -42,7 +42,7 @@ class SecondPage extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 height: 100,
               ),
               Container(
@@ -57,12 +57,12 @@ class SecondPage extends StatelessWidget {
                           Get.snackbar("Item", "Can not decrease more",
                               backgroundColor: Colors.black,
                               colorText: Colors.white,
-                              titleText: Text(
+                              titleText: const Text(
                                 "Item",
                                 style: TextStyle(
                                     fontSize: 40, color: Colors.white),
                               ),
-                              messageText: Text(
+                              messageText: const Text(
                                 "Can not reduce more",
                                 style: TextStyle(
                                     fontSize: 20, color: Colors.white),
