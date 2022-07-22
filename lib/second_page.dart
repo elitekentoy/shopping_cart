@@ -88,6 +88,12 @@ class SecondPage extends StatelessWidget {
                     Flexible(
                       child: Container(
                         padding: const EdgeInsets.only(left: 20, right: 20),
+                        height: 60,
+                        width: double.maxFinite,
+                        decoration: BoxDecoration(
+                          color: Colors.black,
+                          borderRadius: BorderRadius.circular(10),
+                        ),
                         child: GestureDetector(
                           onTap: () {
                             Get.to(() => HomePage(),
@@ -106,12 +112,6 @@ class SecondPage extends StatelessWidget {
                               ),
                             ],
                           ),
-                        ),
-                        height: 60,
-                        width: double.maxFinite,
-                        decoration: BoxDecoration(
-                          color: Colors.black,
-                          borderRadius: BorderRadius.circular(10),
                         ),
                       ),
                     )
