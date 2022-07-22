@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
-// import 'package:provider_test/second_page.dart';
+import 'package:shopping_cart/second_page.dart';
 
 import 'data_class.dart';
 
@@ -43,11 +43,11 @@ class HomePage extends StatelessWidget {
                 child: Container(
                   width: 60,
                   height: 60,
-                  child: const Icon(Icons.add),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       border:
                           Border.all(color: const Color(0xFF716f72), width: 1)),
+                  child: const Icon(Icons.add),
                 ),
                 onTap: () {
                   if (context.read<DataClass>().x >= 5) {
@@ -77,19 +77,20 @@ class HomePage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
-                    children: const [
-                      // GestureDetector(
-                      //     onTap: () {
-                      //       Get.to(() => SecondPage(),
-                      //           transition: Transition.upToDown,
-                      //           duration: Duration(seconds: 1));
-                      //     },
-                      //     child: Text(
-                      //       "Next Page",
-                      //       style: TextStyle(fontSize: 20, color: Colors.white),
-                      //     ),),
-                      Spacer(),
-                      Icon(Icons.skip_next, color: Colors.white)
+                    children: [
+                      GestureDetector(
+                        onTap: () {
+                          Get.to(() => const SecondPage(),
+                              transition: Transition.upToDown,
+                              duration: const Duration(seconds: 1));
+                        },
+                        child: const Text(
+                          "Next Page",
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ),
+                      ),
+                      const Spacer(),
+                      const Icon(Icons.skip_next, color: Colors.white)
                     ],
                   ),
                 ),
