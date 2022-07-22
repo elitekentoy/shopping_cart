@@ -21,18 +21,19 @@ class HomePage extends StatelessWidget {
               Consumer<DataClass>(builder: (context, dataClass, child) {
                 return Text(
                   '${dataClass.x}',
-                  style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                  style: const TextStyle(
+                      fontSize: 20, fontWeight: FontWeight.bold),
                 );
               }),
-              Spacer(),
-              Text(
+              const Spacer(),
+              const Text(
                 "Total",
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
               )
             ],
           ),
         ),
-        SizedBox(
+        const SizedBox(
           height: 100,
         ),
         Padding(
@@ -43,10 +44,11 @@ class HomePage extends StatelessWidget {
                 child: Container(
                   width: 60,
                   height: 60,
-                  child: Icon(Icons.add),
+                  child: const Icon(Icons.add),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      border: Border.all(color: Color(0xFF716f72), width: 1)),
+                      border:
+                          Border.all(color: const Color(0xFF716f72), width: 1)),
                 ),
                 // onTap: () {
                 //   if (context.read<DataClass>().x >= 5) {
@@ -66,7 +68,7 @@ class HomePage extends StatelessWidget {
                 //   }
                 // },
               ),
-              Spacer(),
+              const Spacer(),
               Container(
                 height: 60,
                 width: 200,
@@ -76,7 +78,7 @@ class HomePage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
-                    children: [
+                    children: const [
                       // GestureDetector(
                       //     onTap: () {
                       //       Get.to(() => SecondPage(),
