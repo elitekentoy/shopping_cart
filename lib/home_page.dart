@@ -43,11 +43,11 @@ class HomePage extends StatelessWidget {
                 child: Container(
                   width: 60,
                   height: 60,
-                  child: const Icon(Icons.add),
                   decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       border:
                           Border.all(color: const Color(0xFF716f72), width: 1)),
+                  child: const Icon(Icons.add),
                 ),
                 onTap: () {
                   if (context.read<DataClass>().x >= 5) {
