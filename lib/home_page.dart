@@ -77,7 +77,7 @@ class HomePage extends StatelessWidget {
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 10),
                   child: Row(
-                    children: const [
+                    children: [
                       GestureDetector(
                         onTap: () {
                           Get.to(() => SecondPage(),
