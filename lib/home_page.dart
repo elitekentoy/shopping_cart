@@ -56,11 +56,11 @@ class HomePage extends StatelessWidget {
                     Get.snackbar("Item", "Can not more than this",
                         backgroundColor: Colors.black,
                         colorText: Colors.white,
-                        titleText: Text(
+                        titleText: const Text(
                           "Item",
                           style: TextStyle(fontSize: 40, color: Colors.white),
                         ),
-                        messageText: Text(
+                        messageText: const Text(
                           "Can not be more than this",
                           style: TextStyle(fontSize: 20, color: Colors.white),
                         ));
