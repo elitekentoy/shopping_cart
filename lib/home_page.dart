@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:get/get.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:provider/provider.dart';
 // import 'package:provider_test/second_page.dart';
 
@@ -50,23 +51,23 @@ class HomePage extends StatelessWidget {
                       border:
                           Border.all(color: const Color(0xFF716f72), width: 1)),
                 ),
-                // onTap: () {
-                //   if (context.read<DataClass>().x >= 5) {
-                //     Get.snackbar("Item", "Can not more than this",
-                //         backgroundColor: Colors.black,
-                //         colorText: Colors.white,
-                //         titleText: Text(
-                //           "Item",
-                //           style: TextStyle(fontSize: 40, color: Colors.white),
-                //         ),
-                //         messageText: Text(
-                //           "Can not be more than this",
-                //           style: TextStyle(fontSize: 20, color: Colors.white),
-                //         ));
-                //   } else {
-                //     context.read<DataClass>().incrementX();
-                //   }
-                // },
+                onTap: () {
+                  if (context.read<DataClass>().x >= 5) {
+                    Get.snackbar("Item", "Can not more than this",
+                        backgroundColor: Colors.black,
+                        colorText: Colors.white,
+                        titleText: Text(
+                          "Item",
+                          style: TextStyle(fontSize: 40, color: Colors.white),
+                        ),
+                        messageText: Text(
+                          "Can not be more than this",
+                          style: TextStyle(fontSize: 20, color: Colors.white),
+                        ));
+                  } else {
+                    context.read<DataClass>().incrementX();
+                  }
+                },
               ),
               const Spacer(),
               Container(
