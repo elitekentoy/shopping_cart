@@ -24,9 +24,9 @@ class SecondPage extends StatelessWidget {
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Consumer<DataClass>(builder: (context, data, child) {
+                      Consumer<DataClass>(builder: (context, dataClass, child) {
                         return Text(
-                          '${data.x}',
+                          '${dataClass.x}',
                           style: const TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 20,
