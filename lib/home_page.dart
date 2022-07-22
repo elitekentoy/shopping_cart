@@ -18,9 +18,9 @@ class HomePage extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 40),
           child: Row(
             children: [
-              Consumer<DataClass>(builder: (context, data, child) {
+              Consumer<DataClass>(builder: (context, dataClass, child) {
                 return Text(
-                  '${data.x}',
+                  '${dataClass.x}',
                   style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                 );
               }),
