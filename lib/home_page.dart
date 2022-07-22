@@ -80,17 +80,17 @@ class HomePage extends StatelessWidget {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Get.to(() => SecondPage(),
+                          Get.to(() => const SecondPage(),
                               transition: Transition.upToDown,
-                              duration: Duration(seconds: 1));
+                              duration: const Duration(seconds: 1));
                         },
-                        child: Text(
+                        child: const Text(
                           "Next Page",
                           style: TextStyle(fontSize: 20, color: Colors.white),
                         ),
                       ),
-                      Spacer(),
-                      Icon(Icons.skip_next, color: Colors.white)
+                      const Spacer(),
+                      const Icon(Icons.skip_next, color: Colors.white)
                     ],
                   ),
                 ),
