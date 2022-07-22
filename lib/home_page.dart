@@ -11,6 +11,27 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        leading: const Icon(
+          Icons.shopping_cart,
+          color: Colors.black,
+        ),
+        actions: [
+          Container(
+            margin: const EdgeInsets.only(right: 10),
+            child: const Center(
+              child: Text(
+                'Shopping Cart',
+                style: TextStyle(
+                  fontSize: 35,
+                  color: Colors.black,
+                ),
+              ),
+            ),
+          ),
+        ],
+      ),
       backgroundColor: const Color(0xFFfefcff),
       body: Column(mainAxisAlignment: MainAxisAlignment.center, children: [
         Padding(
@@ -27,7 +48,10 @@ class HomePage extends StatelessWidget {
               const Spacer(),
               const Text(
                 "Total",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 40),
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
+                  fontSize: 40,
+                ),
               )
             ],
           ),
